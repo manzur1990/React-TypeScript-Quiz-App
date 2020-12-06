@@ -7,7 +7,7 @@ import QuestionCard from './components/QuestionCard';
 //Types
 import { Difficulty } from './API'
 
-const TOTAL_QUESTIONS = 10;
+const TOTAL_QUESTIONS =10;
 
 const App =()  =>{
   const [loading, setLoading] = useState(false);
@@ -33,7 +33,7 @@ const App =()  =>{
 
   return (
     <div className="Quiz">
-    <h1>REACT QUIZ</h1>
+    <h1>QUIZ GAME</h1>
     <button className="start" onClick={startTrivia}>
      Start
     </button> 
@@ -47,7 +47,7 @@ const App =()  =>{
     userAnswer={userAnswers ? userAnsers[number] : undefined}
     callback={checkAnswerS}
     /> */}
-    <button className="next" onClick={nextQuestion}></button>
+    <button className="next" onClick={nextQuestion}>Next Question</button>
     </div>
    
   );
